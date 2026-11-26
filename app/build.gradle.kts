@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.amorte_appdev"
+    namespace = "com.example.amorte"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.amorte_appdev"
+        applicationId = "com.example.amorte"
         minSdk = 25
         targetSdk = 37
         versionCode = 1
@@ -30,7 +30,13 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
+
+
 
 dependencies {
     implementation(libs.activity.ktx)
